@@ -1,10 +1,16 @@
 #PYTHON BMI CALCULATOR
-height = input("input your height in Meters: ")
-weight = input("input your wieght in Kilograms: ")
+height = int(input("input your height in Meters: "))
+weight = int(input("input your wieght in Kilograms: "))
 
-BMI = int(weight) / float(height) ** 2
+bmi = round((weight/height ** 2))
 
-print(BMI)
-
-bmi_as_int = int(BMI)
-print(bmi_as_int)
+if bmi < 18.5:
+    print(f"your bmi is {bmi}, you are underweight")
+elif bmi < 25:
+    print(f"your bmi is {bmi}, you are normal weight")
+elif bmi < 30:
+    print(f"your bmi is {bmi}, you are normal overweight")
+elif bmi < 35:
+    print(f"your bmi is {bmi}, you are normal obese")
+else:
+    print(f"your bmi is {bmi}, you are clinically normal obese")
