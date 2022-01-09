@@ -1,6 +1,6 @@
 #PYTHON BMI CALCULATOR
 height = int(input("input your height in Meters: "))
-weight = int(input("input your wieght in Kilograms: "))
+weight = int(input("input your weight in Kilograms: "))
 
 bmi = round((weight/height ** 2))
 
